@@ -28,8 +28,11 @@
 
     // BUG 3: função que não faz nada
     function logout() {
-     
-    }
+  document.getElementById("usuarioLogin").value = "";
+  document.getElementById("senhaLogin").value = "";
+  document.getElementById("mensagem").innerText = "Você saiu do sistema.";
+}
+
   </script>
 </body>
 </html>
