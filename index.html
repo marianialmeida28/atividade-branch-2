@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>App com Bugs</title>
+</head>
+<body>
+
+  <h1>Aplicativo com Bugs</h1>
+
+  <button onclick="mostrarMensagem()">Clique aqui</button>
+  <div id="mensagem"></div>
+
+  <script>
+    // BUG 1: erro de nome de função
+    function mostrarMenssagem() {
+      document.getElementById("mensagem").innerText = "Olá, mundo!";
+    }
+
+    // BUG 2: variável não definida
+    function somarNumeros() {
+      let resultado = numero1 + numero2; 
+      alert("Resultado: " + resultado);
+    }
+
+    // BUG 3: função que não faz nada
+    function logout() {
+     
+    }
+  </script>
+</body>
+</html>
